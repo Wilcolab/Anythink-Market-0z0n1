@@ -43,6 +43,7 @@ const reducer = (state = {}, action) => {
         pager: action.pager,
         items: action.payload.items,
         itemsCount: action.payload.itemsCount,
+        title: action.title,
         currentPage: 0,
       };
     case APPLY_TAG_FILTER:
