@@ -4,10 +4,8 @@ import agent from "../../agent";
 
 const Banner = ({ onSearch }) => {
   const [title, setTitle] = React.useState("")
-  console.log(title)
 
   React.useEffect(() => {
-    console.log(title)
     if (title.length >= 3) {
       onSearch(
         title,
@@ -16,7 +14,7 @@ const Banner = ({ onSearch }) => {
       );
     } else {
       onSearch(
-        title,
+        "",
         agent.Items.all,
         agent.Items.all()
       );
